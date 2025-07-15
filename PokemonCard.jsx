@@ -1,7 +1,6 @@
 import * as React from "react";
 
-export default function PokemonCard({ data, isLoading }) {
-  if (!data) return null 
+export default function PokemonCard({ data, isLoading, error }) {
   if (isLoading === true) {
     return <div className="card" />
   }
