@@ -1,0 +1,9 @@
+.search-wrapper {
+  position: relative;
+}
+
+.search-wrapper svg {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+}

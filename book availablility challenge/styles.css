@@ -1,0 +1,81 @@
+nav {
+  padding: 0.75em;
+  background-color: var(--brand-charcoal);
+}
+
+main {
+  padding-top: 40px;
+}
+
+.checkout-wrapper {
+  padding: 1rem;
+  border: var(--border-thin);
+  border-radius: 8px;
+  text-align: center;
+  margin-top: 16px;
+}
+
+button.primary {
+  background-color: var(--brand-yellow);
+  border: 2px solid var(--brand-charcoal);
+  box-shadow: var(--shadow);
+  padding: 8px;
+  width: 100%;
+  font-weight: bold;
+  border-radius: 100px;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+button.link {
+  text-decoration: underline;
+  color: var(--brand-yellow);
+  display: inline-block;
+  background-color: transparent;
+  padding: 0;
+  border: none;
+}
+
+h5 {
+  font-size: 33px;
+}
+
+div.select {
+  background-color: var(--brand-coal);
+  color: var(--brand-beige);
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+div.select:focus-within {
+  box-shadow: var(--focus-object);
+}
+
+div.select select {
+  background: transparent;
+  border: none;
+  color: inherit;
+  width: 100%;
+}
+
+div.select select:focus {
+  outline: none;
+}
+
+span.message {
+  font-size: 13px;
+  text-align: center;
+}
+
+div.book {
+  display: grid;
+  gap: 8px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+div.book.fetching {
+  opacity: 0.5;
+}
