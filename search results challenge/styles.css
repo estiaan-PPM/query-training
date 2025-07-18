@@ -1,0 +1,22 @@
+.search-wrapper {
+  position: relative;
+}
+
+.search-wrapper svg {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+}
+
+.search-results header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing);
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.search-results header h2 {
+  margin-bottom: 0;
+}
