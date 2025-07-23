@@ -1,0 +1,136 @@
+nav {
+  padding: 0.75em;
+  background-color: var(--brand-charcoal);
+}
+
+main {
+  padding-top: 40px;
+}
+
+.checkout-wrapper {
+  padding: 1rem;
+  border: var(--border-thin);
+  border-radius: 8px;
+  text-align: center;
+  margin-top: 16px;
+}
+
+button.primary {
+  background-color: var(--brand-yellow);
+  border: 2px solid var(--brand-charcoal);
+  box-shadow: var(--shadow);
+  padding: 8px;
+  width: 100%;
+  font-weight: bold;
+  border-radius: 100px;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+button.link {
+  text-decoration: underline;
+  color: var(--brand-yellow);
+  display: inline-block;
+  background-color: transparent;
+  padding: 0;
+  border: none;
+}
+
+h5 {
+  font-size: 33px;
+}
+
+div.select {
+  background-color: var(--brand-coal);
+  color: var(--brand-beige);
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+div.select:focus-within {
+  box-shadow: var(--focus-object);
+}
+
+div.select select {
+  background: transparent;
+  border: none;
+  color: inherit;
+  width: 100%;
+}
+
+div.select select:focus {
+  outline: none;
+}
+
+span.message {
+  font-size: 13px;
+  text-align: center;
+}
+
+div.book {
+  display: grid;
+  gap: 8px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+div.book.fetching {
+  opacity: 0.5;
+}
+
+fieldset:disabled {
+  opacity: 0.5;
+}
+
+:disabled,
+:disabled * {
+  cursor: not-allowed;
+}
+
+.star-rating {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+.radio-input {
+  position: fixed;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.radio-label {
+  cursor: pointer;
+  font-size: 0;
+  transition: color 0.1s ease-in-out;
+}
+
+.radio-label:before {
+  content: "★";
+  display: inline-block;
+}
+
+.radio-input:checked ~ .radio-label {
+  color: var(--brand-yellow);
+}
+
+.radio-label:hover,
+.radio-label:hover ~ .radio-label {
+  color: var(--brand-beige);
+}
+
+.radio-input:checked + .radio-label:hover,
+.radio-input:checked + .radio-label:hover ~ .radio-label,
+.radio-input:checked ~ .radio-label:hover,
+.radio-input:checked ~ .radio-label:hover ~ .radio-label,
+.radio-label:hover ~ .radio-input:checked ~ .radio-label {
+  color: darkgoldenrod;
+}
+
+.error {
+  color: var(--brand-red);
+  text-align: center;
+  padding: 8px;
+}
